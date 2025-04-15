@@ -3,10 +3,9 @@ let pkgs = import <nixpkgs> {
 };
 in
   pkgs.callPackage (
-    {mkShell}:
+    { mkShell }:
     mkShell {
-      nativeBuildInputs = [ ];
       buildInputs = [ ];
+      nativeBuildInputs = [ ];
     }
   ) {}
-

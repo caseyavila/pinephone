@@ -5,11 +5,9 @@ linker_script := linker.ld
 c_source_files := $(wildcard src/*.c)
 c_object_files := $(patsubst src/%.c, build/%.o, $(c_source_files))
 asm_source_files := $(wildcard src/asm/*.S)
-asm_object_files := $(patsubst src/asm/%.S, \
-	build/%.o, $(asm_source_files))
+asm_object_files := $(patsubst src/asm/%.S, build/%.o, $(asm_source_files))
 
-
-CFLAGS = -O2 -c -Wall -Werror -pedantic
+CFLAGS = -c -Wall -Werror -pedantic
 
 .PHONY: all run clean
 

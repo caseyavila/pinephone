@@ -1,6 +1,6 @@
 .section .boot, "ax"
 
     bl kmain
-	bx lr
+    bx lr
 
 .pool

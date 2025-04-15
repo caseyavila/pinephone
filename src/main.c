@@ -4,7 +4,7 @@
 void kmain(void) {
     int i = 0;
 
-    for(;;) {
+    for (;;) {
         for (int j = 0; j < 100000; j++) {
             if (i % 2) {
                 motor_set(0);
